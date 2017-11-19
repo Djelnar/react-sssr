@@ -3,14 +3,6 @@ const path = require('path')
 
 
 const baseConfig = {
-  cache: true,
-  devtool: 'eval',
-  plugins: [
-    new webpack.DllReferencePlugin({
-      context: path.join(__dirname, "src"),
-      manifest: require("./dll/vendor-manifest.json")
-    })
-  ],
   module: {
     rules: [{
       test: /\.jsx$/,

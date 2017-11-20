@@ -1,13 +1,13 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const dllConfig = {
+module.exports = {
   entry: {
     vendor: [path.join(__dirname, 'src', 'vendors.js')]
   },
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'dll.[name].js',
+    filename: '[name].js',
     library: '[name]'
   },
   plugins: [
@@ -25,5 +25,3 @@ const dllConfig = {
     ]
   }
 }
-
-module.exports = dllConfig

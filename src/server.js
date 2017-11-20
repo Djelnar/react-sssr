@@ -1,12 +1,12 @@
 import express from 'express'
-import { indexHandler } from './handlers/indexHandler'
+import { indexServer } from './index-server'
 
 
 const app = express()
 const PORT = process.env.PORT || 3000
 
 app.use(express.static('public'))
-app.get('*', indexHandler)
+app.get('*', indexServer)
 
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`)

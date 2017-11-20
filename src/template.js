@@ -1,15 +1,13 @@
-export const Index = ({ body }) => {
-  return (`
+export const Template = ({ body }) => `
     <!DOCTYPE html>
     <html>
       <head>
         <title>React Server Side Rendering</title>
       </head>
       <body>
-        <div id="app">${body}</div>
+        <div id="root">${body}</div>
+        <script src="vendor.js"></script>
         <script src="main.js"></script>
-        <script src="dll.vendor.js"></script>
       </body>      
     </html>
-  `)
-}
+  `

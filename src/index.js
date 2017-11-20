@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React from 'react'
+import { hydrate } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { Routes } from './routes'
 
 
-const App = props => 'говно';
-
-render(<App />, document.querySelector('#root'))
+hydrate(
+<BrowserRouter>
+  <Routes />
+</BrowserRouter>, document.querySelector('#root'))

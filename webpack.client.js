@@ -1,7 +1,7 @@
 const webpack = require('webpack')
-const { resolve } = require('path')
+const path = require('path')
 const merge = require('webpack-merge')
-const { baseConfig } = require('./webpack.base')
+const baseConfig = require('./webpack.base')
 
 
 const config = {
@@ -9,14 +9,15 @@ const config = {
   devtool: 'eval',
   entry: './src/index.js',
   output: {
-    path: resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public'),
     filename: '[name].js',
     chunkFilename: '[name].js'
   },
   plugins: [
     new webpack.DllReferencePlugin({
       context: path.join(__dirname, "src"),
-      manifest: require("./dll/vendor-manifest.json")
+      manifest: require("./dll/vendor-manifest.json"),
+      name: 'vendor'
     })
   ],
 }

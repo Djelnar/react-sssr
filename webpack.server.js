@@ -1,14 +1,14 @@
 const webpack = require('webpack')
 const { resolve } = require('path')
 const merge = require('webpack-merge')
-const { baseConfig } = require('./webpack.base')
+const baseConfig = require('./webpack.base')
 const Package = require('./package.json')
 const nodeExternals = require('webpack-node-externals')
 
 
 const config = {
   target: 'node',
-  entry: './server/index.js',
+  entry: './src/server.js',
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'server.js'

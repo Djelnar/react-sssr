@@ -106,7 +106,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.App = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(0));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App(props) {\n  return _react.default.createElement(\"div\", null, \"\\u0445\\u0443\\u0439\");\n};\n\nexports.App = App;\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/components/app.js\n// module id = 6\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/components/app.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.App = void 0;\n\nvar _react = _interopRequireDefault(__webpack_require__(0));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App(props) {\n  return _react.default.createElement(\"div\", null, \"wellcum\");\n};\n\nexports.App = App;\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/components/app.js\n// module id = 6\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/components/app.js?");
 
 /***/ })
 /******/ ]);

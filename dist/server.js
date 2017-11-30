@@ -209,7 +209,7 @@ var _react = _interopRequireDefault(__webpack_require__(0));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App(props) {
-  return _react.default.createElement("div", null, "\u0445\u0443\u0439");
+  return _react.default.createElement("div", null, "wellcum");
 };
 
 exports.App = App;

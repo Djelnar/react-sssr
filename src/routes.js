@@ -2,7 +2,8 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { App } from './components/app'
 
-export const Routes = (props) =>
+
+export const Routes = () => (
   <Switch>
-    <Route path='/' component={App} />
-  </Switch>
+    <Route exact path='/' component={App} />
+  </Switch>)

@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 
 
@@ -8,17 +7,17 @@ const baseConfig = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       use: {
-        loader: 'babel-loader'
-      }
-    }]
+        loader: 'babel-loader',
+      },
+    }],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
     modules: [
-      "node_modules",
-      path.resolve(__dirname, "src")
-    ]
-  }
+      'node_modules',
+      path.resolve(__dirname, 'src'),
+    ],
+  },
 }
 
 module.exports = baseConfig

@@ -4,11 +4,12 @@ import { StaticRouter } from 'react-router-dom'
 import { Template } from './template'
 import { Routes } from './routes'
 
+
 export const indexServer = (req, res) => {
-  const body = renderToString(
+  const body = renderToString((
     <StaticRouter location={req.url} context={{}} >
       <Routes />
-    </StaticRouter>    
-  )
+    </StaticRouter>))
+
   res.send(Template({ body }))
 }

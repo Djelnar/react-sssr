@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const merge = require('webpack-merge')
+const manifest = require('./dll/vendor-manifest.json')
 const baseConfig = require('./webpack.base')
 
 
@@ -11,14 +12,14 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].js',
-    chunkFilename: '[name].js'
+    chunkFilename: '[name].js',
   },
   plugins: [
     new webpack.DllReferencePlugin({
-      context: path.join(__dirname, "src"),
-      manifest: require("./dll/vendor-manifest.json"),
-      name: 'vendor'
-    })
+      context: path.join(__dirname, 'src'),
+      manifest,
+      name: 'vendor',
+    }),
   ],
 }
 

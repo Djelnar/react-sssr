@@ -3,7 +3,7 @@ import { indexServer } from './index-server'
 
 
 const app = express()
-const { PORT } = process.env
+const PORT = 4200
 
 app.use(express.static('public'))
 app.get('*', indexServer)

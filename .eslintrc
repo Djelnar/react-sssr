@@ -3,5 +3,8 @@
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017
+  },
+  "rules": {
+    "linebreak-style": "off"
   }
 }

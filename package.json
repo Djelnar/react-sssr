@@ -8,7 +8,7 @@
     "dev:build-dll": "webpack --config webpack.dll.client.js --watch --progress",
     "dev:build-server": "webpack --config webpack.server.js --watch --progress",
     "dev:start-server": "nodemon dist/server.js --watch dist",
-    "dev": "npm-run-all --parallel dev:*",
+    "dev": "run-p dev:*",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -24,8 +24,10 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^4.12.1",
     "eslint-config-atomix-react": "^4.0.0",
+    "file-loader": "^1.1.5",
     "nodemon": "^1.12.1",
     "npm-run-all": "^4.1.2",
+    "react-svg-loader": "^2.1.0",
     "webpack": "^3.8.1",
     "webpack-merge": "^4.1.1",
     "webpack-node-externals": "^1.6.0"
@@ -33,10 +35,11 @@
   "dependencies": {
     "express": "^4.16.2",
     "isomorphic-fetch": "^2.2.1",
-    "node-fetch": "^1.7.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
     "styled-components": "^2.2.4"
   }
 }

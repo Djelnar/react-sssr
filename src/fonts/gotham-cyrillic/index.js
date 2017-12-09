@@ -3,6 +3,7 @@ import Regular from './GothaProReg.otf'
 import RegularIta from './GothaProIta.otf'
 import Bla from './GothaProBla.otf'
 import BlaIta from './GothaProBlaIta.otf'
+import Med from './GothaProMed.otf'
 
 /* eslint-disable no-unused-expressions */
 
@@ -29,5 +30,10 @@ injectGlobal`
     src: url(${BlaIta});
     font-weight: 900;
     font-style: italic;
+  }
+  @font-face {
+    font-family: 'Gotham';
+    src: url(${Med});
+    font-weight: 500;
   }
 `

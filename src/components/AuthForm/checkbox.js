@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
-export const Link = styled.a.attrs({
-  href: p => p.href,
-})`
-  font-family: Gotham;
+export const GrayLink = styled(Link).attrs({
+  to: props => props.to,
+}) `
+  font-family: 'Gotham';
   font-size: 12px;
   line-height: 2.55;
   letter-spacing: 0.1px;
@@ -15,6 +16,7 @@ export const Link = styled.a.attrs({
     text-decoration: none;
   }
 `
+
 
 const Label = styled.label`
   & span {
@@ -28,8 +30,10 @@ const Label = styled.label`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  user-select: none;
   & input[type='checkbox'] {
-    display: none;
+    position: absolute;
+    z-index: -9999;
   }
   & .checkbox {
     width: 20px;
@@ -54,7 +58,7 @@ const Label = styled.label`
   & input[type='checkbox']:checked ~ .checkbox {
     &:after {
       background-color: #f54141;
-      box-shadow: 0px 6px 16px 0 rgba(245, 65, 65, 0.49)
+      box-shadow: 0px 0 16px 2px rgba(245,65,65,0.49)
     }
   }
 `

@@ -16,6 +16,7 @@ const Btn = styled.button.attrs({
   border: none;
   outline: none;
   cursor: pointer;
+  transition: box-shadow .2s ease;
   &:hover, &:active, &:focus {
     box-shadow: 0px 13px 29px 0 rgba(94, 216, 254, 0.6);
   }

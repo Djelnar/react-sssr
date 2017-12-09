@@ -6,7 +6,7 @@ export const IconsWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  padding: 6vh 0;
+  padding-bottom: 4vh;
 `
 
 export const Icon = styled.a.attrs({

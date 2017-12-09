@@ -18,6 +18,7 @@ const baseConfig = {
             loader: 'file-loader',
             options: {
               name: '[name].[hash].[ext]',
+              publicPath: '/',
             },
           },
         ],

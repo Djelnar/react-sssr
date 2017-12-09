@@ -1,6 +1,6 @@
 import React from 'react'
 import { Main } from '../views/main'
-import { AuthForm } from '../components/AuthForm'
+import { AuthForm } from '../components/auth-form'
 
 
 export const Auth = (p) => {
